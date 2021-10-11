@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	width: 200px;
+	margin-block: 10px;
+}
+
+.toggle {
+	visibility: hidden;
+}
+
+.label {
+	position: relative;
+	display: inline-block;
+	height: 40px;
+	width: 80px;
+	margin: 0 15px 0;
+	border-radius: 100vw;
+	background: gainsboro;
+	cursor: pointer;
+}
+
+.toggle:checked + .label {
+	background: indigo;
+}
+
+.ball {
+	background: #fff;
+	height: 34px;
+	aspect-ratio: 1;
+	border-radius: 100%;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	align-items: center;
+	justify-content: center;
+	animation: slide-left 0.3s linear forwards;
+}
+
+.toggle:checked + .label .ball {
+	animation: slide-right 0.3s linear forwards;
+}
+
+@keyframes slide-right {
+	0% {
+		transform: translateX(0) scale(1);
+	}
+	50% {
+		transform: translateX(20px) scale(1.2);
+	}
+	100% {
+		transform: translateX(40px) scale(1);
+	}
+}
+
+@keyframes slide-left {
+	0% {
+		transform: translateX(40px) scale(1);
+	}
+	50% {
+		transform: translateX(20px) scale(1.2);
+	}
+	100% {
+		transform: translateX(0) scale(1);
+	}
+}
