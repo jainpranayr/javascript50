@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-family: "Poppins", sans-serif;
+	background: #fafafa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.magic {
+	background: #f9ca24;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	font-size: 1rem;
+	padding: 12px 20px;
+	position: fixed;
+	top: 20px;
+	letter-spacing: 1px;
+	box-shadow: 0 3px rgba(255, 140, 0, 0.5);
+	z-index: 10;
+}
+
+.magic:focus {
+	outline: none;
+}
+
+.magic:active {
+	box-shadow: none;
+	transform: translateY(2px);
+}
+
+.boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+	height: 500px;
+	aspect-ratio: 1;
+	transition: 0.4s ease;
+}
+
+.boxes.big {
+	height: 600px;
+	aspect-ratio: 1;
+}
+
+.boxes.big .box {
+	transform: rotateZ(360deg);
+}
+
+.box {
+	background: url("https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif");
+	background-repeat: no-repeat;
+	background-size: 500px 500px;
+	height: 125px;
+	aspect-ratio: 1;
+	position: relative;
+	transition: 0.4s ease;
+}
+
+.box::after {
+	content: "";
+	background: #f6e58d;
+	position: absolute;
+	top: 8px;
+	right: -15px;
+	height: 100%;
+	width: 15px;
+	transform: skewY(45deg);
+}
+.box::before {
+	content: "";
+	background: #f9ca24;
+	position: absolute;
+	bottom: -15px;
+	left: 8px;
+	height: 15px;
+	width: 100%;
+	transform: skewX(45deg);
+}
