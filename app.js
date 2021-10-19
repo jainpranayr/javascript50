@@ -29,7 +29,7 @@ const projects = [
 		number: "05",
 		name: "Blurry Loading",
 		img: "./05-Blurry loading/snap.png",
-		index: "./05-Blurry Loading/index.html"
+		index: "./05-Blurry loading/index.html"
 	},
 	{
 		number: "06",
@@ -83,7 +83,7 @@ const projects = [
 		number: "14",
 		name: "Animated Navigation",
 		img: "./14- Animated Navigaion/snap.png",
-		index: "./14- Animated Navigation/index.html"
+		index: "./14- Animated Navigaion/index.html"
 	},
 	{
 		number: "15",
@@ -114,12 +114,6 @@ const projects = [
 		name: "Clock",
 		img: "./19- Clock/snap.png",
 		index: "./19- Clock/index.html"
-	},
-	{
-		number: "15",
-		name: "Counter",
-		img: "./15- Counter/snap.png",
-		index: "./15- Counter/index.html"
 	},
 	{
 		number: "20",
