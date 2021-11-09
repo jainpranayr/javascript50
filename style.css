@@ -8,7 +8,7 @@
 }
 
 body {
-	background: coral;
+	background: #ee6e3f;
 	color: #fff;
 	text-align: center;
 }
@@ -34,11 +34,11 @@ header i {
 }
 
 h1 a {
-	color: crimson;
+	color: #141414;
 }
 
 h1 a:visited {
-	color: crimson;
+	color: #141414;
 }
 
 .btn {
@@ -49,7 +49,7 @@ h1 a:visited {
 	text-transform: capitalize;
 	cursor: pointer;
 	color: #fff;
-	background-color: lightsalmon;
+	background-color: #db3b00;
 	padding: 12px 30px;
 	border-radius: 0px;
 	transition: all 0.5s ease 0s;
@@ -61,7 +61,7 @@ h1 a:visited {
 }
 
 .projects {
-	background: lightsalmon;
+	background: #db3b00;
 	display: grid;
 	padding: 1rem;
 	grid-template-columns: repeat(5, 1fr);
